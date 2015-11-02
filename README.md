@@ -1,5 +1,5 @@
 # MYFlowOverView
-![MYFlowOverView](/Users/mengyangxu/Desktop/flow.gif)
+![MYFlowOverView](http://7xjt4p.com1.z0.glb.clouddn.com/flow.gif)
 ## Usage
 
 
