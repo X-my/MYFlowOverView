@@ -31,7 +31,7 @@
 
     MYFlowOverView* flowOverView = [[MYFlowOverView alloc]initWithTargetView:sender contentView:content];
     
-    flowOverView.flowDirection =  MYFlowOverViewFlowDirectionDown;
+    flowOverView.flowDirection = sender.tag%2 ? MYFlowOverViewFlowDirectionDown : MYFlowOverViewFlowDirectionUp;
     
     [flowOverView show];
 }
