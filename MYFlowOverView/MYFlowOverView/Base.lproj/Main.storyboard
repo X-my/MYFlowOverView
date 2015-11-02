@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Swm-Nf-DGC">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="MJN-j3-wuQ">
+            <objects>
+                <viewController id="PYK-AW-6tL" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bpk-dB-Xfa"/>
+                        <viewControllerLayoutGuide type="bottom" id="H4B-xU-Icw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ocg-JX-Iu8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mC1-sq-B6t">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="aaj-9q-brb"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem style="plain" id="o0D-Nq-mcX">
+                                        <button key="customView" opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1QN-9H-Bre">
+                                            <rect key="frame" x="20" y="4" width="36" height="36"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <animations/>
+                                            <state key="normal" image="panda"/>
+                                            <connections>
+                                                <action selector="buttonClicked:" destination="PYK-AW-6tL" eventType="touchUpInside" id="XMH-ZS-0iv"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="ZN6-Ko-Der"/>
+                                    <barButtonItem style="plain" id="0n0-U9-NI1">
+                                        <button key="customView" opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rzv-TW-KQC">
+                                            <rect key="frame" x="282" y="4" width="36" height="36"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <animations/>
+                                            <state key="normal" image="panda"/>
+                                            <connections>
+                                                <action selector="buttonClicked:" destination="PYK-AW-6tL" eventType="touchUpInside" id="Ap5-GN-i21"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="j2v-0A-KZe"/>
+                                    <barButtonItem style="plain" id="VRP-YA-QLQ">
+                                        <button key="customView" opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gSx-SO-57l">
+                                            <rect key="frame" x="544" y="4" width="36" height="36"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <animations/>
+                                            <state key="normal" image="panda"/>
+                                            <connections>
+                                                <action selector="buttonClicked:" destination="PYK-AW-6tL" eventType="touchUpInside" id="8I6-ej-wvU"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="H4B-xU-Icw" firstAttribute="top" secondItem="mC1-sq-B6t" secondAttribute="bottom" id="82d-XU-2zU"/>
+                            <constraint firstAttribute="trailing" secondItem="mC1-sq-B6t" secondAttribute="trailing" id="dDz-Mi-KPT"/>
+                            <constraint firstItem="mC1-sq-B6t" firstAttribute="leading" secondItem="ocg-JX-Iu8" secondAttribute="leading" id="p8P-T3-uhv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="cYR-Db-UE1">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="TMA-h4-Byd">
+                            <button key="customView" opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Qtp-p2-efA">
+                                <rect key="frame" x="20" y="4" width="36" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <state key="normal" image="panda"/>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="PYK-AW-6tL" eventType="touchUpInside" id="wZW-wk-1gg"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                        <button key="titleView" opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ajU-XG-yzU">
+                            <rect key="frame" x="280" y="2" width="40" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <state key="normal" image="panda"/>
+                            <connections>
+                                <action selector="buttonClicked:" destination="PYK-AW-6tL" eventType="touchUpInside" id="g3z-z1-iTJ"/>
+                            </connections>
+                        </button>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="aaJ-ta-C3J">
+                            <button key="customView" opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="UQh-mh-uZr">
+                                <rect key="frame" x="544" y="4" width="36" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <state key="normal" image="panda"/>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="PYK-AW-6tL" eventType="touchUpInside" id="gg3-vM-yo3"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WaF-vh-O1a" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1028" y="882"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Fme-H0-SW3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Swm-Nf-DGC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gYT-TR-a3j">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="PYK-AW-6tL" kind="relationship" relationship="rootViewController" id="Bam-zu-ZBp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ruw-Wn-Bdn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="324" y="872"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="panda" width="36" height="36"/>
+    </resources>
+</document>
