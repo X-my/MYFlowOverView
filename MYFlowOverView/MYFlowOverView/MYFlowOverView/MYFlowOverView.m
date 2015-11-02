@@ -124,7 +124,7 @@
 }
 #pragma mark - Animations
 
-- (CGRect)subviewFrameWillAnimate:(CGRect)finalFrame
+- (CGRect)originalFrameBeforeAnimate:(CGRect)finalFrame
 {
     CGRect frame = finalFrame;
     if (self.flowDirection == MYFlowOverViewFlowDirectionUp) {
@@ -144,8 +144,8 @@
     [[UIApplication sharedApplication].windows.firstObject addSubview:self];
     self.alpha = 0;
     
-    lineView.frame = [self subviewFrameWillAnimate:lineFinalFrame];
-    contentView.frame = [self subviewFrameWillAnimate:contentFinalFrame];
+    lineView.frame = [self originalFrameBeforeAnimate:lineFinalFrame];
+    contentView.frame = [self originalFrameBeforeAnimate:contentFinalFrame];
     
     [UIView animateKeyframesWithDuration:self.animateDuration delay:0.0 options:UIViewKeyframeAnimationOptionCalculationModeLinear animations:^{
         
@@ -176,12 +176,12 @@
         [UIView addKeyframeWithRelativeStartTime:0.0
                                 relativeDuration:0.5
                                       animations:^{
-                                          contentView.frame = [self subviewFrameWillAnimate:contentFinalFrame];
+                                          contentView.frame = [self originalFrameBeforeAnimate:contentFinalFrame];
                                       }];
         [UIView addKeyframeWithRelativeStartTime:0.5
                                 relativeDuration:2/5.0
                                       animations:^{
-                                          lineView.frame = [self subviewFrameWillAnimate:lineFinalFrame];
+                                          lineView.frame = [self originalFrameBeforeAnimate:lineFinalFrame];
                                       }];
         [UIView addKeyframeWithRelativeStartTime:9/10.0
                                 relativeDuration:1/10.0
