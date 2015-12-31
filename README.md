@@ -1,5 +1,7 @@
 # MYFlowOverView
-![MYFlowOverView](http://7xjt4p.com1.z0.glb.clouddn.com/flow.gif)
+
+<img src="./flow.gif"/>
+
 ## Usage
 
 
